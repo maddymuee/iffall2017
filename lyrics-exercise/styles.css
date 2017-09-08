@@ -1,0 +1,18 @@
+body{
+	font-family:'Nunito', sans-serif;
+	size:9px;
+	color:#000000;
+	line-height:20px;
+	padding-left:15%;
+	}
+
+h1{font-size:200px;
+	color:#000000;
+	text-decoration:none;
+}
+h1:hover{
+	color:#ff0000;
+	}
+.boldtext{
+	color:#ff0000;
+	}
