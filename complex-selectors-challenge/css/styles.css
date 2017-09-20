@@ -29,11 +29,8 @@ h1, h2{
 	border-style:solid none none none;
 	border-color:#000000;
 }
-.content header{
-	font-weight:bold;
-	font-color:#000000;
-}
-.content header a, a:visited{
+
+.content .selected a, a:visited{
 	color:#000000;
 	font-weight:bold;
 }
