@@ -1,0 +1,33 @@
+body{
+	font-family:'Nunito', sans-serif;
+	size:9px;
+	color:#000000;
+	line-height:20px;
+	background-image:url('https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/06/06/13/abba.jpg');
+	background-attachment:fixed;
+	background-size:cover;
+	}
+#content{
+	width:600px;
+	margin:auto;
+	background-color:#ffffff;
+	text-align:center;
+	padding-bottom:30px;
+}
+
+h1{
+	font-size:100px;
+	color:#000000;
+	text-decoration:none;
+	text-align:center;
+}
+h1:hover{
+	color:#ff0000;
+	}
+.boldtext{
+	color:#ff0000;
+	}
+b{
+	color:#ff0000;
+	text-transform:uppercase;
+}
