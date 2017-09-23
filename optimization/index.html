@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Image Format Comparisons</title>
+		<style>
+			body {
+				font-family: "Arial", sans-serif;
+				padding: 30px;
+			}
+
+			h1 {
+				margin: 0 0 6px 0;
+			}
+
+			h2 {
+				margin: 0 0 30px 0;
+			}
+
+			table {
+			}
+
+			td, th {
+				background-color: #eee;
+				padding: 30px;
+				margin: 2px;
+				text-align: center;
+				vertical-align: middle;
+			}
+
+			.blank {
+				background-color: transparent;
+			}
+
+			.label {
+				background-color: #3997b6;
+				color: #fff;
+				font-weight: bold;
+				font-size: 16px;
+			}
+
+			.label.optimized {
+				background-color: #39b64e;
+			}
+
+			.note {
+				font-size: 14px;
+				font-weight: normal;
+				font-style: italic;
+			}
+
+			div.note {
+				margin-top: 5px;
+			}
+
+			img {
+				width: 300px;
+				height: 300px;
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<h1>Image Optimization Grid</h1>
+		<h2>Maddy Mueller</h2>
+
+		<table>
+			<tr>
+				<td class="label">Original</td>
+				<td><img src="images/sign_original.jpg" alt="Sign - Original"><div class="note">115KB</div></td>
+				<td><img src="images/aziz_original.jpg" alt="Aziz - Original"><div class="note">91.2KB</div></td>
+				<td><img src="images/wings_svg.svg" alt="Wings - Original"><div class="note">5.08KB</div></td>
+			</tr>
+			<tr>
+				<td class="label">GIF 16 <span class="note">(with transparency)</td>
+				<td><img src="images/sign_gif_16.gif" alt="Gif-16">
+				<div class="note">21 KB</div></td>
+				<td><img src="images/aziz_gif_16.gif" alt="Gif-16">
+				<div class="note">23 KB</div></td>
+				<td><img src="images/wings_gif_16.gif" alt="Gif-16">
+				<div class="note">4 KB</div></td>
+			</tr>
+			<tr>
+				<td class="label">GIF 256 <span class="note">(with transparency)</td>
+				<td><img src="images/sign_gif_256.gif" alt="Gif-256">
+				<div class="note">57 KB</div></td>
+				<td><img src="images/aziz_gif_256.gif" alt="Gif-256">
+				<div class="note">59 KB</div></td>
+				<td><img src="images/wings_gif_256.gif" alt="Gif-256">
+				<div class="note">4 KB</div></td>
+			</tr>
+			<tr>
+				<td class="label">JPEG Low <span class="note">(10%)</span></td>
+				<td><img src="images/sign_jpeg_low.jpg" alt="JPEG Low">
+				<div class="note">12 KB</div></td>
+				<td><img src="images/aziz_jpeg_low.jpg" alt="JPEG Low">
+				<div class="note">8 KB</div></td>
+				<td><img src="images/wings_jpeg_low.jpg" alt="JPEG Low">
+				<div class="note">11 KB</div></td>
+			</tr>
+			<tr>
+				<td class="label">JPEG Very High <span class="note">(80%)</span></td>
+				<td><img src="images/sign_jpeg_veryhigh.jpg" alt="JPEG Very High">
+				<div class="note">58 KB</div></td>
+				<td><img src="images/aziz_jpeg_veryhigh.jpg" alt="JPEG Very High">
+				<div class="note">41 KB</div></td>
+				<td><img src="images/wings_jpeg_veryhigh.jpg" alt="JPEG Very High">
+				<div class="note">35 KB</div></td>
+			</tr>
+			<tr>
+				<td class="label">PNG-8</td>
+				<td><img src="images/sign_png_8.png" alt="PNG-8">
+				<div class="note">52 KB</div></td>
+				<td><img src="images/aziz_png_8.png" alt="PNG-8">
+				<div class="note">54 KB</div></td>
+				<td><img src="images/wings_png_8.png" alt="PNG-8">
+				<div class="note">4 KB</div></td>
+			</tr>
+			<tr>
+				<td class="label">PNG-24 <span class="note">(without transparency)</span></td>
+				<td><img src="images/sign_png_24_notransparency.png" alt="PNG-24"><div class="note">177 KB</div></td>
+				<td><img src="images/aziz_png_24_notransparency.png" alt="PNG-24"><div class="note">167 KB</div></td>
+				<td><img src="images/wings_png_24_notransparency.png" alt="PNG-24"><div class="note">31 KB</div></td>
+			</tr>
+			<tr>
+				<td class="label">PNG-24 <span class="note">(with transparency)</span>
+				</td>
+				<td><img src="images/sign_png_24_withtransparency.png" alt="PNG-24"><div class="note">177 KB</div></td>
+				<td><img src="images/aziz_png_24_withtransparency.png" alt="PNG-24"><div class="note">192 KB</div></td>
+				<td><img src="images/wings_png_24_withtransparency.png" alt="PNG-24"><div class="note">23 KB</div></td>
+			</tr>
+			<tr>
+				<td class="label">SVG</td>
+				<td></td>
+				<td></td>
+				<td><img src="images/wings_svg.svg" alt="SVG"><div class="note">8 KB</div></td>
+			</tr>
+			<tr>
+				<td class="label optimized">Optimized <span class="note">GIF 4</span></td>
+				<td><img src="images/sign_gif_4.gif" alt="GIF-4"><div class="note">13 KB</div></td>
+				<td><img src="images/aziz_gif_4.gif" alt="GIF-4"><div class="note">13 KB</div></td>
+				<td><img src="images/wings_gif_4.gif" alt="GIF-4"><div class="note">4 KB</div></td>
+			</tr>
+		</table>
+
+
+	</body
+</html>
