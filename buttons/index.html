@@ -1,0 +1,660 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Buttons &mdash; Maddy Mueller</title>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+
+		<style>
+
+			body {
+				color: #333;
+				font-family: 'Open Sans', sans-serif;
+				margin: 0;
+				padding: 0;
+			}
+
+			#main_content {
+				margin: 40px;
+			}
+
+			h1 {
+			 	font-size: 30px;
+			 	margin-bottom: 40px;
+			}
+
+			.button_container {
+				border: 1px solid #ddd;
+				margin: 0 10px 10px 0;
+				padding: 20px;
+				width: 300px;
+				height: 300px;
+				float: left;
+				overflow: hidden;
+				box-sizing: border-box;
+				text-align: center;
+			}
+
+			a#btn_spotify {
+				display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				border-radius: 25px;
+				margin: auto;
+				margin-top: 100px;
+				padding: 10px 40px 0 40px;
+				background-color: #2ebd59;
+				border: 2px solid #2ebd59;
+				color: #fff;
+				font-size: 20px;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+			}
+
+			a#btn_spotify:hover {
+				background-color: #fff;
+				border: 2px solid #000;
+				color: #000;
+			}
+
+
+			a#btn_twitter {
+				display: inline-block;
+				height: 40px;
+				box-sizing: border-box;
+				border-radius: 4px;
+				margin: auto;
+				margin-top: 105px;
+				padding: 10px 30px 0 30px;
+				background-color: #56cdf1;
+				color: #fff;
+				font-size: 18px;
+				font-family: 'Arial', sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+			}
+
+			a#btn_twitter:hover {
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2ebfec+0,28a5cb+100 */
+				background: #2ebfec; /* Old browsers */
+				background: -moz-linear-gradient(top,  #2ebfec 0%, #28a5cb 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2ebfec), color-stop(100%,#28a5cb)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top,  #2ebfec 0%,#28a5cb 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top,  #2ebfec 0%,#28a5cb 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top,  #2ebfec 0%,#28a5cb 100%); /* IE10+ */
+				background: linear-gradient(to bottom,  #2ebfec 0%,#28a5cb 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ebfec', endColorstr='#28a5cb',GradientType=0 ); /* IE6-9 */
+			}
+
+
+			a#btn_amazon {
+				display: block;
+				width: 100px;
+				height: 100px;
+				box-sizing: border-box;
+				border-radius: 50px;
+				margin: auto;
+				margin-top: 75px;
+				padding-top: 8px;
+				background-color: #232f3e;
+				color: #fff;
+				text-align: center;
+				font-size: 60px;
+			}
+
+			a#btn_amazon:hover {
+				background-color: #fc9a18;
+			}
+
+
+			a#btn_indiegogo {
+				display: inline-block;
+				margin:auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+				background-color: #fff;
+				color: #eb1478;
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 30px;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: -2px;
+			}
+
+			a#btn_indiegogo:hover {
+				color: #fff;
+				background-color: #eb1478;
+			}
+
+			a#btn_cocacola {
+				display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				margin: auto;
+				margin-top: 100px;
+				padding: 10px 40px 0 40px;
+			}
+
+			a#btn_cocacola:hover {
+				-webkit-filter: grayscale(100%);
+    			filter: grayscale(100%);
+			}
+
+			a#btn_apple {
+				display:block;
+				margin:auto;
+				margin-top:80px;
+				font-size:80px;
+				color:#000000;
+			}
+
+			a#btn_apple:hover{
+				color:#999999;
+			}
+
+			a#btn_ibm {
+				display: inline-block;
+				box-sizing: border-box;
+				border-radius: 25px;
+				margin: auto;
+				margin-top: 80px;
+				padding: 10px 40px 0 40px;
+				color: #225dbf;
+				font-size: 50px;
+				font-family: 'Alfa Slab One', serif;
+				font-weight: normal;
+				text-decoration: none;
+			}
+			a#btn_ibm:hover {
+				font-weight:bold;
+			}
+
+			a#btn_hasbro {
+				display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				border-radius: 5px;
+				margin: auto;
+				margin-top: 100px;
+				padding: 10px 40px 0 40px;
+				background-color: #36b8e3;
+				color: #fff;
+				font-size: 20px;
+				font-weight: bold;
+				text-decoration: none;
+			}
+			a#btn_hasbro:hover {
+				background: #b3dced; /* Old browsers */
+				background: -moz-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top, #b3dced 0%,#29b8e5 50%,#bce0ee 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom, #b3dced 0%,#29b8e5 50%,#bce0ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=0 ); /* IE6-9 */
+			}
+
+			a#btn_harleydavidson{
+				display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				margin: auto;
+				margin-top: 100px;
+				padding: 10px 40px 0 40px;
+				-webkit-transition: -webkit-transform 1s ease-in-out;
+				transition: transform 1s ease-in-out;
+			}
+			a#btn_harleydavidson:hover{
+				-webkit-transform:rotate(360deg);
+				transform:rotate(360deg);
+			}
+			a#btn_michaelkors{
+				font-family:'Montserrat', sans-serif;
+				font-weight:bold;
+				display:inline-block;
+				margin:auto;
+				margin-top:30px;
+				font-size:100px;
+				color:#000000;
+				border-radius:50%;
+				width:150px;
+				height:150px;
+				border:10px solid #ffffff;
+				text-decoration:none;
+				letter-spacing:-20px;
+			}
+			a#btn_michaelkors:hover{
+				border:10px solid #000000;
+			}
+
+			a#btn_sardellastl{
+				-webkit-filter:grayscale(100);
+				filter:grayscale(100%);
+				display: inline-block;
+				box-sizing: border-box;
+				margin: auto;
+				margin-top: 0px;
+				padding: 50px 40px 0 40px;
+			}
+			a#btn_sardellastl:hover{
+				-webkit-filter:none;
+				filter:none;
+			}
+
+			a#btn_lyft{
+				display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				margin: auto;
+				margin-top: 80px;
+				padding: 10px 40px 0 40px;
+				height:100px;
+			}
+			a#btn_lyft:hover{
+				background-color:#000000;
+			}
+
+			a#btn_samsung{
+				display: inline-block;
+				margin:auto;
+				margin-top: 100px;
+				padding: 8px 16px;
+				background-color: #3a3a3a;
+				border:2px solid;
+				color: #FFFFFF;
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 30px;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: 3px;
+			}
+			a#btn_samsung:hover{
+				background-color:#ffffff;
+				color:#3a3a3a;
+			}
+
+			a#btn_cartoonnetwork{
+				display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				margin: auto;
+				margin-top: 100px;
+			}
+			a#btn_cartoonnetwork:hover{
+				filter: invert(100%);
+			}
+
+			a#btn_thetonightshow{
+				display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				margin: auto;
+				margin-top: 100px;
+				opacity:0.5;
+			}
+			a#btn_thetonightshow:hover{
+				opacity:1;
+				margin-top:50px;
+			}
+
+			a#btn_nike{
+				display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				margin: auto;
+				margin-top: 100px;
+				-webkit-transition: -webkit-transform .5s ease-in-out;
+				transition: transform .5s ease-in-out;
+			}
+			a#btn_nike:hover{
+		-webkit-transform:rotate(720deg);
+				transform:rotate(720deg);
+			}
+			
+			a#btn_missouribotanicalgarden{
+				display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				margin: auto;
+				margin-top: 80px;
+				}
+			a#btn_missouribotanicalgarden:hover{
+				 -webkit-filter: hue-rotate(180deg);
+    filter: hue-rotate(180deg);;
+			}
+
+			a#btn_thecolorrun {
+				display: inline-block;
+				height: 40px;
+				box-sizing: border-box;
+				border-radius: 4px;
+				margin: auto;
+				margin-top: 105px;
+				padding: 10px 30px 0 30px;
+				background-color: #000000;
+				color: #fff;
+				font-size: 18px;
+				font-family: 'Arial', sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+			}
+			a#btn_thecolorrun:hover{
+				background: #ff3236; /* Old browsers */
+background: -moz-linear-gradient(left, #ff3236 0%, #ff7032 19%, #fff832 37%, #2fce27 58%, #0026d3 78%, #c300d8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #ff3236 0%,#ff7032 19%,#fff832 37%,#2fce27 58%,#0026d3 78%,#c300d8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #ff3236 0%,#ff7032 19%,#fff832 37%,#2fce27 58%,#0026d3 78%,#c300d8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3236', endColorstr='#c300d8',GradientType=1 ); /* IE6-9 */
+			}
+
+			a#btn_pottermore {
+				display:block;
+				margin:auto;
+				margin-top:80px;
+				font-size:80px;
+				color:#000000;
+			}
+
+			a#btn_pottermore:hover{
+				color:gold;
+			}
+
+			a#btn_fitbit {
+				display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				border-radius: 25px;
+				margin: auto;
+				margin-top: 100px;
+				padding: 12px 40px 0 40px;
+				background-color: #33cccc;
+				color: #fff;
+				font-size: 20px;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+			}
+
+			a#btn_fitbit:hover {
+				background-color: #fff;
+				color: #000;
+			}
+
+			a#btn_explodingkittens{
+				display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				margin: auto;
+				margin-top: 80px;
+			}
+			a#btn_explodingkittens:hover{
+				webkit-filter:saturate(10);
+				filter:saturate(10);
+			}
+
+			a#btn_stjude{
+				display: inline-block;
+				margin:auto;
+				margin-top: 50px;
+				padding: 8px 16px;
+				background-color: #fff;
+				color: #999999;
+				font-family: Georgia, serif;
+				font-size: 30px;
+				text-decoration: none;
+				text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+			}
+			a#btn_stjude:hover{
+				color:#cc0000;
+			}
+
+			a#btn_newyorker{
+				display: inline-block;
+				height: 150px;
+				margin: auto;
+				margin-top: 40px;
+				border:10px solid #fff;
+			}
+			a#btn_newyorker:hover{
+				border:10px solid #000;
+			}
+
+			a#btn_npr{
+				display: inline-block;
+				height: 50px;
+				width:150px;
+				margin: auto;
+				margin-top: 100px;
+			}
+			a#btn_npr:hover{
+				filter: invert(100%);
+			}
+
+			a#btn_instagram {
+				display:block;
+				margin:auto;
+				margin-top:80px;
+				font-size:80px;
+				color:#000000;
+			}
+
+			a#btn_instagram:hover{
+				font-size:100px;
+				margin-top:70px;
+			}
+
+			a#btn_facebook {
+				display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				border-radius: 25px;
+				margin: auto;
+				margin-top: 100px;
+				padding: 11px 40px 0 40px;
+				background-color: #3b5998;
+				color: #fff;
+				font-size: 20px;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+				border:2px solid #3b4998;
+			}
+
+			a#btn_facebook:hover {
+				background-color: #fff;
+				color: #3b5998;
+				border:2px solid #3b5998;
+			}
+
+			a#btn_oldnavy {
+				display: inline-block;
+				height: 50px;
+				box-sizing: border-box;
+				margin: auto;
+				margin-top: 100px;
+				color: #2f364a;
+				font-size: 20px;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: bold;
+				text-decoration: none;
+			}
+			a#btn_oldnavy:hover{
+				text-transform:uppercase;
+				text-decoration:underline;
+			}
+			a#btn_army{
+				display: inline-block;
+				height: 150px;
+				margin: auto;
+				margin-top: 30px;
+				-webkit-filter: grayscale(100%);
+    			filter: grayscale(100%);
+			}
+			a#btn_army:hover{
+				filter:none;
+			}
+
+			a#btn_craigslist {
+				display: block;
+				box-sizing: border-box;
+				border-radius: 15px;
+				margin: auto;
+				width:200px;
+				margin-top: 75px;
+				padding-top: 8px;
+				padding-bottom:8px;
+				background-color: violet;
+				color: #fff;
+				text-align: center;
+				font-size: 30px;
+				text-decoration:none;
+				font-family:georgia, serif;
+			}
+
+			a#btn_craigslist:hover {
+				width:220px;
+				padding-top:18px;
+				padding-bottom:18px;
+				margin-top:65px;
+			}
+
+
+
+
+
+		</style>
+	</head>
+	<body>
+		
+		<div id="main_content">
+
+			<h1>Button Styling &mdash; Maddy Mueller</h1>
+			
+			<div class="button_container">
+				<a href="http://www.spotify.com" target="_blank" id="btn_spotify">Spotify</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.amazon.com" target="_blank" id="btn_amazon"><i class="fa fa-amazon"></i></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.twitter.com" target="_blank" id="btn_twitter">twitter</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.indiegogo.com" target="_blank" id="btn_indiegogo">indiegogo</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.coca-cola.com" target="_blank" id="btn_cocacola"><img src="http://www.coca-cola.co.uk/content/dam/journey/gb/en/hidden/History/Heritage/596x334/the_logo_story_01122014_596x334.jpg" width="150px"></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.apple.com" target="_blank" id="btn_apple"><i class="fa fa-apple" aria-hidden="true"></i></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.ibm.com" target="_blank" id="btn_ibm">IBM</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://nerf.hasbro.com/en-us" target="_blank" id="btn_hasbro">Hasbro</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.harley-davidson.com" target="_blank" id="btn_harleydavidson"><img src="https://vignette2.wikia.nocookie.net/logopedia/images/0/09/Harley-Davidson.png/revision/latest?cb=20120830075452" width="100px"></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.michaelkors.com" target="_blank" id="btn_michaelkors">MK</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://sardellastl.com" target="_blank" id="btn_sardellastl"><img src="http://sardellastl.com/wp-content/themes/Sardella/assets/images/img1.jpg" width="150px"></a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.lyft.com" target="_blank" id="btn_lyft"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Lyft_logo.svg/2000px-Lyft_logo.svg.png" width="150px"></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.samsung.com/us" target="_blank" id="btn_samsung">SAMSUNG</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.cartoonnetwork.com" target="_blank" id="btn_cartoonnetwork"><img src="http://vignette1.wikia.nocookie.net/cartoonnetwork/images/f/fe/CARTOON_NETWORK_logo.png/revision/latest?cb=20111206183320" width="150px"></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.nbc.com/the-tonight-show" target="_blank" id="btn_thetonightshow"><img src="https://upload.wikimedia.org/wikipedia/en/2/28/TSSJF_Logo.png" width="150px"></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.nike.com/us/en_us" target="_blank" id="btn_nike"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1200px-Logo_NIKE.svg.png" width="150px"></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.missouribotanicalgarden.org" target="_blank" id="btn_missouribotanicalgarden"><img src="https://assets.trabiancdn.com/api/file/eCd94hYESIOpXYy0E6bm+MBG_Logo_600x400.jpg" width="150px"></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://thecolorrun.com" target="_blank" id="btn_thecolorrun">the color run</a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.pottermore.com" target="_blank" id="btn_pottermore"><i class="fa fa-bolt" aria-hidden="true"></i></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.fitbit.com/home" target="_blank" id="btn_fitbit">fitbit</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.explodingkittens.com" target="_blank" id="btn_explodingkittens"><img src="https://static1.squarespace.com/static/54e8ba93e4b07c3f655b452e/t/56c2a04520c64707756f4267/1493764650017/" width="150px"></a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.stjude.org" target="_blank" id="btn_stjude">St. Jude Children's Research Hospital</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.newyorker.com" target="_blank" id="btn_newyorker"><img src="https://pbs.twimg.com/profile_images/900059590586486784/fmY_4l3f_400x400.jpg" width="150px"></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.npr.org" target="_blank" id="btn_npr"><img src="https://www.npr.org/about/images/press/Logos/NPRLogo_RGB.png" width="150px"></a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.instagram.com" target="_blank" id="btn_instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.facebook.com" target="_blank" id="btn_facebook">facebook</a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://www.oldnavy.com" target="_blank" id="btn_oldnavy">old navy</a>
+			</div>
+
+			<div class="button_container">
+				<a href="https://www.army.mil" target="_blank" id="btn_army"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/US_Army_logo.svg/2000px-US_Army_logo.svg.png" width="150px"></a>
+			</div>
+
+			<div class="button_container">
+				<a href="http://stlouis.craigslist.org/" target="_blank" id="btn_craigslist">craigslist</a>
+			</div>
+
+
+
+		</div>	
+
+	</body>
+</html>
