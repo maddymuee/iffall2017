@@ -66,9 +66,9 @@ h4{
 }
 
 .content3{
-	width:900px;
+	width:960px;
 	display:block;
-	margin-left:233px;
+	margin:auto;
 	font-size:18px;
 	line-height:1.34rem;
 }
@@ -77,11 +77,13 @@ h4{
 	float:left;
 	width:420px;
 	display:inline-block;
+	margin-left:2px;
 }
 .rightcolumn{
 	float:right;
 	width:420px;
 	display:inline-block;
+	margin-right:58px;
 }
 .floatingimage3{
 	float:left;
