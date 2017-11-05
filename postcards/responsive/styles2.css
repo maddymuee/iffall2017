@@ -1,0 +1,75 @@
+body, html {
+	height:100%;
+	margin: 0;
+}
+
+.background {
+	background-image:url('images/thirdkim.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height:100%;
+}
+
+#quote {
+	font-family: 'Merriweather', serif;
+	font-weight:900;
+	text-align:center;
+}
+
+a {
+	display:block;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+}
+
+/* LARGEST */
+
+@media screen and (min-width: 1240px) {
+	#quote {
+		position:absolute;
+		left:75px;
+		top:75px;
+		width:500px;
+		font-size:50px;
+	}
+}
+
+/* MIDDLE */
+
+@media screen and (max-width: 768px) and (min-width: 585px) {
+	 #quote {
+		position:absolute;
+		left:40px;
+		top:40px;
+		width:250px;
+		font-size:25px;
+		}
+}
+
+/* SMALLEST */
+
+@media screen and (max-width: 585px) {
+	 #quote {
+		position:absolute;
+		left:30px;
+		top:30px;
+		width:200px;
+		font-size:20px;
+	}
+	
+}
+
+/* LARGER */
+
+@media screen and (max-width: 1240px) and (min-width: 768px) {
+	#quote {
+		position:absolute;
+		left:55px;
+		top:55px;
+		width:300px;
+		font-size:30px;
+	}
