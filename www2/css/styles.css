@@ -3,7 +3,7 @@ body, html, .container {
 	margin: 0;
 }
 body {
-	background-image:url('images/Tea_Plantation_Darjeeling.jpg');
+	background-image:url('https://upload.wikimedia.org/wikipedia/commons/4/45/Tea_plantation_Darjeeling.JPG');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
